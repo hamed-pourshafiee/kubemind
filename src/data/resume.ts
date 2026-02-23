@@ -141,12 +141,17 @@ export const skills: SkillCategory[] = [
   {
     name: "Languages & Frameworks",
     icon: "code",
-    items: ["Python", "Django", "Flask", "Golang", "Bash", "JavaScript", "TypeScript", "React", "React Native"],
+    items: ["Python", "Django", "Flask", "Bash", "JavaScript", "TypeScript", "React", "React Native"],
+  },
+  {
+    name: "AI & Agentic Applications",
+    icon: "brain",
+    items: ["Agentic AI Applications", "Google ADK", "LLM Integration", "AI Orchestration"],
   },
   {
     name: "Cloud & Infrastructure",
     icon: "cloud",
-    items: ["AWS (EKS, RDS, S3, CloudFront, Lambda, SQS, SNS, API Gateway, VPC)", "Cloudflare", "Terraform"],
+    items: ["AWS (EKS, RDS, S3, CloudFront, Lambda, SQS, SNS, API Gateway, VPC)", "GCP (Cloud Run, Cloud Functions, Vertex AI, Cloud Build, Pub/Sub, Cloud Storage)", "Cloudflare", "Terraform"],
   },
   {
     name: "DevOps & CI/CD",
@@ -156,7 +161,7 @@ export const skills: SkillCategory[] = [
   {
     name: "Operating Systems",
     icon: "terminal",
-    items: ["Linux", "macOS", "Windows"],
+    items: ["Linux", "macOS"],
   },
 ];
 
