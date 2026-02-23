@@ -11,51 +11,60 @@ import { personalInfo } from "../data/resume";
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-500/5 rounded-full blur-3xl"></div>
   </div>
 
-  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-    <div class="animate-fade-in-up">
-      <div class="inline-block mb-6 px-4 py-1.5 border border-primary-500/30 rounded-full bg-primary-500/10 text-primary-300 text-sm font-medium">
-        Available for new opportunities
+  <div class="relative z-10 max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12 md:gap-16">
+    <div class="animate-fade-in-up delay-200 flex-shrink-0 order-first md:order-first">
+      <div class="relative">
+        <div class="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-600 to-accent-500 p-1">
+          <img
+            src="/profile.jpg"
+            alt="Hamed Pourshafiee"
+            class="w-full h-full rounded-full object-cover"
+          />
+        </div>
+        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-600/20 rounded-full blur-xl"></div>
+        <div class="absolute -top-4 -left-4 w-20 h-20 bg-accent-500/20 rounded-full blur-xl"></div>
       </div>
     </div>
+    <div class="flex-1 text-center md:text-left">
+      <div class="animate-fade-in-up">
+        <div class="inline-block mb-6 px-4 py-1.5 border border-primary-500/30 rounded-full bg-primary-500/10 text-primary-300 text-sm font-medium">
+          Available for new opportunities
+        </div>
+      </div>
 
-    <h1 class="animate-fade-in-up delay-100 text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-      <span class="text-surface-50">Hi, I'm </span>
-      <span class="bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text text-transparent animate-gradient">
-        {personalInfo.name}
-      </span>
-    </h1>
+      <h1 class="animate-fade-in-up delay-100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
+        <span class="text-surface-50">Hi, I'm </span>
+        <span class="bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text text-transparent animate-gradient">
+          {personalInfo.name}
+        </span>
+      </h1>
 
-    <p class="animate-fade-in-up delay-200 text-lg sm:text-xl md:text-2xl text-surface-100/70 max-w-2xl mx-auto mb-4">
-      {personalInfo.title}
-    </p>
+      <p class="animate-fade-in-up delay-200 text-lg sm:text-xl md:text-2xl text-surface-100/70 mb-4">
+        {personalInfo.title}
+      </p>
 
-    <p class="animate-fade-in-up delay-300 text-base sm:text-lg text-surface-100/50 max-w-xl mx-auto mb-10">
-      8+ years building scalable systems, cloud infrastructure, and leading engineering teams.
-    </p>
+      <p class="animate-fade-in-up delay-300 text-base sm:text-lg text-surface-100/50 max-w-xl mb-10">
+        8+ years building scalable systems, cloud infrastructure, and leading engineering teams.
+      </p>
 
-    <div class="animate-fade-in-up delay-400 flex flex-col sm:flex-row gap-4 justify-center">
-      <a
-        href="#contact"
-        class="px-8 py-3 bg-primary-600 hover:bg-primary-500 text-white font-medium rounded-xl transition-all hover:shadow-lg hover:shadow-primary-600/25 hover:-translate-y-0.5"
-      >
-        Get in Touch
-      </a>
-      <a
-        href="/Resume_Software_Engineer.pdf"
-        download
-        class="inline-flex items-center gap-2 px-8 py-3 border border-surface-700 hover:border-primary-500/50 text-surface-100 font-medium rounded-xl transition-all hover:bg-white/5 hover:-translate-y-0.5"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-        </svg>
-        Download Resume
-      </a>
-      <a
-        href="#experience"
-        class="px-8 py-3 border border-surface-700 hover:border-primary-500/50 text-surface-100 font-medium rounded-xl transition-all hover:bg-white/5 hover:-translate-y-0.5"
-      >
-        View My Work
-      </a>
+      <div class="animate-fade-in-up delay-400 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a
+          href="#contact"
+          class="px-8 py-3 bg-primary-600 hover:bg-primary-500 text-white font-medium rounded-xl transition-all hover:shadow-lg hover:shadow-primary-600/25 hover:-translate-y-0.5"
+        >
+          Get in Touch
+        </a>
+        <a
+          href="/Resume_Software_Engineer.pdf"
+          download
+          class="inline-flex items-center justify-center gap-2 px-8 py-3 border border-surface-700 hover:border-primary-500/50 text-surface-100 font-medium rounded-xl transition-all hover:bg-white/5 hover:-translate-y-0.5"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>
+          Download Resume
+        </a>
+      </div>
     </div>
   </div>
 
